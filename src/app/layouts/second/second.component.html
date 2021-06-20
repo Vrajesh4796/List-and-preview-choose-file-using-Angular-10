@@ -1,0 +1,11 @@
+<div class="col-md-6">
+    <h3 mat-subheader>Preview</h3>
+    <div class="row fileItem" *ngFor="let data of common.url; let ind = index">
+        <div class="col-sm-12 fileItemIconDiv">
+          <img src="assets/images/sample.pdf" width="100px">
+        </div>
+        <div class="col-sm-12 fileItemText">
+            <a href="javascript:void(0)" (click)="downloadFile(data)">{{data.fileName}}</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="col-md-3">
+    <mat-list>
+        <h3 mat-subheader>Files</h3>
+        <mat-list-item *ngFor="let file of common.url">
+            <mat-icon mat-list-icon>folder</mat-icon>
+                <h4 mat-line>{{file.fileName}}</h4>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</div>
